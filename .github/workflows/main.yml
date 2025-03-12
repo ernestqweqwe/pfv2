@@ -1,9 +1,9 @@
 name: linting, testing, building
 on:
   push:
-    branches: [ mafin ]
+    branches: [ main ]
   pull_request:
-    branches: [ madin ]
+    branches: [ main ]
 jobs:
   pipeline:
     runs-on: windows-latest
