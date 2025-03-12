@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "ESNext",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+
+      "moduleResolution": "node",
+      // позволяет работать с пакетами, который использует common js как с
+      // обычными пакетами с помощбю import
+      "esModuleInterop": true,
+      // позволяет писать вместо import * import просто
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": ".",
+      "paths": {
+        "*": ["./src/*"]
+      }
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    },
+  "include": ["./config/jest/setupTests.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
+}
